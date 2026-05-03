@@ -6,7 +6,7 @@ import { RiArrowGoBackLine } from "react-icons/ri";
 const ViewDetails = async ({ params }) => {
   const { view } = await params;
 
-  const res = await fetch("http://localhost:3000/product.json", {
+  const res = await fetch("https://a08-jackfruit-project-git-main-ibnaabids-projects.vercel.app/product.json", {
     cache: "no-store",
   });
 

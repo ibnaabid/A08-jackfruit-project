@@ -2,7 +2,7 @@
 import { authClient } from "../lib/auth-client";
 import { useForm } from "react-hook-form";
 import Link from "next/link";
-import { toast } from "react-toastify/unstyled";
+import { toast } from "react-toastify";
 
 const SignUp = () => {
   const {
