@@ -15,7 +15,7 @@ const Profile = () => {
 
   const onUpdate = async (data) => {
   
-    const { data: res, error } = await authClient.updateUser({
+    const { data:res, error } = await authClient.updateUser({
       image: data.image,
       name: data.name,
     });
