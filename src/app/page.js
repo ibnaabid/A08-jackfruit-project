@@ -1,3 +1,4 @@
+import AllCardPage from "./Card/page";
 import AllCards from "./Card/page";
 import HomePage from "./Home/page";
 import SummerTips from "./summerTips/page";
@@ -8,7 +9,7 @@ export default function Home() {
   return (
     <>
     <HomePage></HomePage>
-    <AllCards></AllCards>
+    <AllCardPage></AllCardPage>
     <SummerTips></SummerTips>
     <TopBrands></TopBrands>
     </>

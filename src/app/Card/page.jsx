@@ -2,8 +2,8 @@
 import ProductDet from "./ProductDet";
 import 'animate.css';
 
-const AllCards = async () => {
-  const res = await fetch("/product.json");
+const AllCardPage = async () => {
+  const res = await fetch("http://localhost:3000/product.json");
   const collection = await res.json();
  
   return (
@@ -34,4 +34,4 @@ const AllCards = async () => {
   );
 };
 
-export default AllCards;
+export default AllCardPage;
