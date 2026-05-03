@@ -1,4 +1,4 @@
-import AllCards from "./Card/page";
+import AllCards from "./Navbar/Card/page";
 import HomePage from "./Home/page";
 import SummerTips from "./summerTips/page";
 import TopBrands from "./top-brand/page";
