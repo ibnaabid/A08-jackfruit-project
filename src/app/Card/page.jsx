@@ -3,7 +3,7 @@ import ProductDet from "./ProductDet";
 import 'animate.css';
 
 const AllCards = async () => {
-  const res = await fetch("https://a08-jackfruit-project-git-main-ibnaabids-projects.vercel.app/product.json");
+  const res = await fetch("/product.json");
   const collection = await res.json();
  
   return (
