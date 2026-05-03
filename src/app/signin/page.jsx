@@ -4,8 +4,11 @@ import { authClient } from "../lib/auth-client";
 // import { toast } from "react-hot-toast";
 import { useForm } from "react-hook-form"
 import { toast } from "react-toastify";
+import { useRouter } from "next/navigation";
 
 const LoginPage = () => {
+
+  const router =useRouter()
   const {
     register,
     handleSubmit,
@@ -26,6 +29,7 @@ const LoginPage = () => {
    }
   if(res){
     toast.success("login successfully")
+    router.push("/")
   }
   };
 

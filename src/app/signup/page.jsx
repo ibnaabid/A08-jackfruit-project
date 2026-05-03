@@ -3,8 +3,12 @@ import { authClient } from "../lib/auth-client";
 import { useForm } from "react-hook-form";
 import Link from "next/link";
 import { toast } from "react-toastify";
+import { useRouter } from "next/navigation";
+
 
 const SignUp = () => {
+   const router = useRouter()
+
   const {
     register,
     handleSubmit,
@@ -12,6 +16,7 @@ const SignUp = () => {
   } = useForm();
 
   const RegisterHandler = async (data) => {
+    
     const { data: res, error } = await authClient.signUp.email({
       name: data.name,
       email: data.email,
@@ -26,6 +31,7 @@ const SignUp = () => {
     }
     if(res){
       toast.success("Sign up successfully!")
+      router.push('/')
     }
   };
 
