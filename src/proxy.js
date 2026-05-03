@@ -10,12 +10,12 @@ export async function proxy(request) {
 
 
     if (!session) {
-        return NextResponse.redirect(new URL('/signin', request.url));
+        return NextResponse.redirect(new URL('/signup', request.url));
     }
 
     return NextResponse.next();
 }
 
 export const config = {
-    matcher: ['/products/:path*' ,"/profile/:id*",], 
+    matcher: ['/products/:path*' ,"/profile/:id",], 
 };
