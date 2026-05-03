@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const TopBrands = () => {
-  ল
+  
   const brands = [
     { 
       name: "La Roche-Posay", 

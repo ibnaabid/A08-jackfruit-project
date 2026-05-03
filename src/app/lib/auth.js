@@ -4,7 +4,7 @@ import { MongoClient } from "mongodb";
 
 const client = new MongoClient(process.env.MONGO_URI);
 
-const db = client.db("summer-project");   
+const db = client.db("my-summmer-app");   
 
 export const auth = betterAuth({
   emailAndPassword: {
