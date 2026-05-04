@@ -5,8 +5,11 @@ import { authClient } from "../lib/auth-client";
 import { HiOutlineUserCircle, HiOutlinePhotograph } from "react-icons/hi";
 import { toast } from "react-toastify";
 import { MdOutlineCelebration } from "react-icons/md";
+import { useRouter } from "next/navigation";
 
 const Profile = () => {
+
+  const router= useRouter()
   const {
     register,
     handleSubmit,
@@ -26,8 +29,11 @@ const Profile = () => {
       toast.success(
         <div className="flex items-center gap-2">
           Profile Updated! <MdOutlineCelebration />
+
         </div>
+
       );
+      router.push("/")
     }
   };
 

@@ -21,7 +21,7 @@ const SignUp = () => {
       name: data.name,
       email: data.email,
       password: data.password,
-      image: "https://example.com/image.png",
+      image: "",
       callbackURL: "/"
     });
 
