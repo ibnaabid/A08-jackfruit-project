@@ -49,7 +49,7 @@ const LoginPage = () => {
               </label>
               <input
                 type="email"
-                className={`input input-bordered w-full rounded-2xl dark:bg-white/5 ${
+                className={`input input-bordered w-full rounded-2xl dark:bg-white ${
                   errors.email ? "border-red-500" : "border-gray-200 dark:border-white/10"
                 }`}
                 placeholder="name@example.com"
@@ -69,7 +69,7 @@ const LoginPage = () => {
               </label>
               <input
                 type="password"
-                className={`input input-bordered w-full rounded-2xl dark:bg-white/5 ${
+                className={`input input-bordered w-full rounded-2xl dark:bg-white ${
                   errors.password ? "border-red-500" : "border-gray-200 dark:border-white/10"
                 }`}
                 placeholder="....."

@@ -39,7 +39,7 @@ const SignUp = () => {
     <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-[#0a0a0b] px-6">
       <div className="w-full max-w-md">
         <form onSubmit={handleSubmit(RegisterHandler)} className="space-y-6">
-          <fieldset className="fieldset bg-white dark:bg-[#111113] border-gray-100 dark:border-white/5 rounded-[2.5rem] border p-8 shadow-2xl shadow-indigo-500/5">
+          <fieldset className="fieldset bg-white dark:bg-violet-950 border-gray-100 dark:border-white/5 rounded-[2.5rem] border p-8 shadow-2xl shadow-indigo-500/5">
             <legend className="text-3xl font-black text-gray-900 dark:text-white mb-6 tracking-tight">
               Create Account
             </legend>
@@ -51,7 +51,7 @@ const SignUp = () => {
               </label>
               <input
                 type="text"
-                className={`input input-bordered w-full rounded-2xl dark:bg-white/5 ${
+                className={`input input-bordered w-full rounded-2xl dark:bg-white  ${
                   errors.name ? "border-red-500" : "border-gray-200 dark:border-white/10"
                 }`}
                 placeholder="John Doe"
@@ -71,7 +71,7 @@ const SignUp = () => {
               </label>
               <input
                 type="email"
-                className={`input input-bordered w-full rounded-2xl dark:bg-white/5 ${
+                className={`input input-bordered w-full rounded-2xl dark:bg-white ${
                   errors.email ? "border-red-500" : "border-gray-200 dark:border-white/10"
                 }`}
                 placeholder="name@example.com"

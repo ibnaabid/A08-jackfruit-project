@@ -38,7 +38,7 @@ const Profile = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#fffdf0] dark:bg-[#0a0a0b] px-6 py-12">
+    <div className="min-h-screen flex items-center justify-center bg-[#fffdf0] dark:bg-violet-950 px-6 py-12">
       <div className="w-full max-w-lg">
         <form
           onSubmit={handleSubmit(onUpdate)}
@@ -63,7 +63,7 @@ const Profile = () => {
                 </span>
                 <input
                   type="text"
-                  className={`input input-bordered w-full pl-12 rounded-2xl dark:bg-white/5 focus:ring-2 focus:ring-indigo-500 transition-all ${
+                  className={`input input-bordered w-full pl-12 rounded-2xl  focus:ring-2 focus:ring-indigo-500 transition-all ${
                     errors.name ? "border-red-500" : "border-gray-200 dark:border-white/10"
                   }`}
                   placeholder="Your Name"
@@ -87,7 +87,7 @@ const Profile = () => {
                 </span>
                 <input
                   type="text"
-                  className={`input input-bordered w-full pl-12 rounded-2xl dark:bg-white/5 focus:ring-2 focus:ring-indigo-500 transition-all ${
+                  className={`input input-bordered w-full pl-12 rounded-2xl  focus:ring-2 focus:ring-indigo-500 transition-all ${
                     errors.image ? "border-red-500" : "border-gray-200 dark:border-white/10"
                   }`}
                   placeholder="https://example.com/photo.jpg"
